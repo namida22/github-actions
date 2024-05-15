@@ -1,8 +1,7 @@
-
 {
-    "name": "my-env",
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:0-buster",
-    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y google-cloud-sdk",
+    "name": "Your GCP Environment",
+    "image": "google/cloud-sdk:latest",
+    "postCreateCommand": "gcloud components install beta",
     "settings": {},
     "extensions": []
 }
