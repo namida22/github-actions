@@ -1,7 +1,7 @@
 {
   "name": "Your GCP Environment",
   "image": "google/cloud-sdk:latest",
-  "postCreateCommand": "echo $GCP_SA_KEY | base64 --decode > /home/vscode/gcp-sa-key.json && gcloud auth activate-service-account --key-file /home/vscode/gcp-sa-key.json",
+  "postCreateCommand": "echo $GCP_SA_KEY | base64 --decode >> /home/cloudsdk/gcp-sa-key.json && gcloud auth activate-service-account --key-file /home/cloudsdk/gcp-sa-key.json",
   "settings": {},
   "extensions": []
 }
